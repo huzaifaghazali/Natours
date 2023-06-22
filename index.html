@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+
     <title>Natours | Exciting tours for adventurous people</title>
 </head>
 
@@ -30,11 +33,11 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="" class="navigation__link"> <span>01</span> About Natours</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"> <span>02</span> Your benefits</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"> <span>03</span> Popular tours</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"> <span>04</span> Stories</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link"> <span>05</span> Book now</a></li>
+                <li class="navigation__item  toggle-nav"><a href="#section-about" class="navigation__link"> <span>01</span> About Natours</a></li>
+                <li class="navigation__item  toggle-nav"><a href="#section-features" class="navigation__link"> <span>02</span> Your benefits</a></li>
+                <li class="navigation__item  toggle-nav"><a href="#section-tours" class="navigation__link"> <span>03</span> Popular tours</a></li>
+                <li class="navigation__item  toggle-nav"><a href="#section-stories" class="navigation__link"> <span>04</span> Stories</a></li>
+                <li class="navigation__item  toggle-nav"><a href="#section-book" class="navigation__link"> <span>05</span> Book now</a></li>
             </ul>
         </nav>
     </div>
@@ -56,7 +59,7 @@
     </header>
 
     <main class="">
-        <section class="section-about">
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     Exciting tours for adventurous people
@@ -103,7 +106,7 @@
 
         </section>
 
-        <section class="section-features">
+        <section class="section-features" id="section-features">
 
             <div class="row">
                 <div class="col-1-of-4">
@@ -259,7 +262,7 @@
 
         </section>
 
-        <section class="section-stories">
+        <section class="section-stories" id="section-stories">
 
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
@@ -313,7 +316,7 @@
             </div>
         </section>
 
-        <section class="section-book">
+        <section class="section-book" id="section-book">
             <div class="row">
                 <div class="book">
                     <div class="book__form">
